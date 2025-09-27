@@ -1,0 +1,46 @@
+{
+  "name": "privacy-pet-dna-matching",
+  "version": "1.0.0",
+  "description": "Privacy-preserving pet DNA matching system for breeding partners using FHE technology",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx http-server . -p 3000 -c-1 --cors",
+    "start": "npx http-server . -p 8080 -c-1 --cors",
+    "build": "echo 'Build completed - static files ready'",
+    "deploy": "npm run build",
+    "compile": "npx hardhat compile",
+    "deploy-contract": "npx hardhat run scripts/deploy.js --network sepolia",
+    "verify": "npx hardhat verify --network sepolia"
+  },
+  "keywords": [
+    "blockchain",
+    "ethereum",
+    "fhe",
+    "privacy",
+    "pet",
+    "dna",
+    "matching",
+    "breeding",
+    "zama"
+  ],
+  "author": "Privacy Pet DNA Matching Team",
+  "license": "MIT",
+  "devDependencies": {
+    "@fhevm/solidity": "^0.5.0",
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "hardhat": "^2.19.0",
+    "ethers": "^5.7.0"
+  },
+  "dependencies": {
+    "http-server": "^14.1.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-org/privacy-pet-dna-matching"
+  },
+  "homepage": "https://your-domain.com",
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  }
+}
