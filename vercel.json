@@ -6,10 +6,10 @@
       "use": "@vercel/static"
     }
   ],
-  "routes": [
+  "rewrites": [
     {
-      "src": "/(.*)",
-      "dest": "/index.html"
+      "source": "/((?!.*\\.(js|css|png|jpg|jpeg|gif|svg|mp4|webm|avi|mov|ico|json|sol)).*)",
+      "destination": "/index.html"
     }
   ],
   "headers": [
@@ -30,5 +30,7 @@
         }
       ]
     }
-  ]
+  ],
+  "cleanUrls": true,
+  "trailingSlash": false
 }
